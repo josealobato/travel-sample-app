@@ -1,7 +1,9 @@
 import SwiftUI
 
 // A view of Single flight offer in a "Card" format.
-struct FlightOfferView: View {
+struct FlightOfferCardView: View {
+    
+    var offer: FlightOffersViewModel.OfferViewModel
     
     var body: some View {
         
@@ -16,11 +18,11 @@ struct FlightOfferView: View {
                 Spacer()
                 VStack(alignment: .leading, spacing: 10) {
                     HStack {
-                        Text("Prague → New York")
+                        Text(offer.citiesPath)
                             .font(.title2)
                             .bold()
                         Spacer()
-                        Text("$199")
+                        Text(offer.priceInDollars)
                             .font(.largeTitle)
                             .bold()
                             .foregroundColor(Color.green)
@@ -28,9 +30,9 @@ struct FlightOfferView: View {
                     .padding(.horizontal)
                     
                     
-                    Text("PRG → JFK · 2 stops")
+                    Text(offer.citiesPath)
                         .padding(.horizontal)
-                    Text("12 hours total · other info")
+                    Text(offer.extraInformation)
                         .padding(.horizontal)
                         .padding(.bottom)
                 }
@@ -50,6 +52,6 @@ struct FlightOfferView: View {
 
 struct FlightOffersView_Previews: PreviewProvider {
     static var previews: some View {
-        FlightOfferView()
+        FlightOfferCardView(offer: FlightOffersViewModel.OfferViewModel(id: "01", citiesPath: "Prague -> New York", priceInDollars: "$119", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info"))
     }
 }

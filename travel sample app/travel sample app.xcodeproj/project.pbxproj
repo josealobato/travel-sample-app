@@ -14,8 +14,18 @@
 		45F3F1FE2ADD35F400D13F6C /* travel_sample_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F1FD2ADD35F400D13F6C /* travel_sample_appTests.swift */; };
 		45F3F2082ADD35F400D13F6C /* travel_sample_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2072ADD35F400D13F6C /* travel_sample_appUITests.swift */; };
 		45F3F20A2ADD35F400D13F6C /* travel_sample_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2092ADD35F400D13F6C /* travel_sample_appUITestsLaunchTests.swift */; };
-		45F3F2192ADD392800D13F6C /* FlightOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2182ADD392800D13F6C /* FlightOfferView.swift */; };
-		45F3F21B2ADD3B2600D13F6C /* FlightOffersCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F21A2ADD3B2600D13F6C /* FlightOffersCollectionView.swift */; };
+		45F3F2192ADD392800D13F6C /* FlightOfferCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2182ADD392800D13F6C /* FlightOfferCardView.swift */; };
+		45F3F21B2ADD3B2600D13F6C /* FlightOfferCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F21A2ADD3B2600D13F6C /* FlightOfferCollectionView.swift */; };
+		45F3F21D2ADD6B1400D13F6C /* FlightOffersBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F21C2ADD6B1400D13F6C /* FlightOffersBuilder.swift */; };
+		45F3F21F2ADD6C2900D13F6C /* FlighOffersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F21E2ADD6C2900D13F6C /* FlighOffersInteractor.swift */; };
+		45F3F2242ADD6D3A00D13F6C /* FlighOffersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2232ADD6D3A00D13F6C /* FlighOffersPresenter.swift */; };
+		45F3F2262ADD6D7F00D13F6C /* FlightOffersServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2252ADD6D7F00D13F6C /* FlightOffersServicesProtocol.swift */; };
+		45F3F2282ADD731900D13F6C /* FlightOffersInteractorEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2272ADD731900D13F6C /* FlightOffersInteractorEvents.swift */; };
+		45F3F22B2ADD746400D13F6C /* FlightOfferEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F22A2ADD746400D13F6C /* FlightOfferEntity.swift */; };
+		45F3F22E2ADD74CC00D13F6C /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F22D2ADD74CC00D13F6C /* AutoMockable.swift */; };
+		45F3F2302ADD773A00D13F6C /* FlightOffersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F22F2ADD773A00D13F6C /* FlightOffersViewModel.swift */; };
+		45F3F2322ADD7BF400D13F6C /* FlightOffersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2312ADD7BF400D13F6C /* FlightOffersView.swift */; };
+		45F3F2352ADD7E4E00D13F6C /* FlightOffersServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2342ADD7E4E00D13F6C /* FlightOffersServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +56,18 @@
 		45F3F2032ADD35F400D13F6C /* travel sample appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "travel sample appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F3F2072ADD35F400D13F6C /* travel_sample_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = travel_sample_appUITests.swift; sourceTree = "<group>"; };
 		45F3F2092ADD35F400D13F6C /* travel_sample_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = travel_sample_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		45F3F2182ADD392800D13F6C /* FlightOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOfferView.swift; sourceTree = "<group>"; };
-		45F3F21A2ADD3B2600D13F6C /* FlightOffersCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOffersCollectionView.swift; sourceTree = "<group>"; };
+		45F3F2182ADD392800D13F6C /* FlightOfferCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOfferCardView.swift; sourceTree = "<group>"; };
+		45F3F21A2ADD3B2600D13F6C /* FlightOfferCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOfferCollectionView.swift; sourceTree = "<group>"; };
+		45F3F21C2ADD6B1400D13F6C /* FlightOffersBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOffersBuilder.swift; sourceTree = "<group>"; };
+		45F3F21E2ADD6C2900D13F6C /* FlighOffersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlighOffersInteractor.swift; sourceTree = "<group>"; };
+		45F3F2232ADD6D3A00D13F6C /* FlighOffersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlighOffersPresenter.swift; sourceTree = "<group>"; };
+		45F3F2252ADD6D7F00D13F6C /* FlightOffersServicesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOffersServicesProtocol.swift; sourceTree = "<group>"; };
+		45F3F2272ADD731900D13F6C /* FlightOffersInteractorEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOffersInteractorEvents.swift; sourceTree = "<group>"; };
+		45F3F22A2ADD746400D13F6C /* FlightOfferEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOfferEntity.swift; sourceTree = "<group>"; };
+		45F3F22D2ADD74CC00D13F6C /* AutoMockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMockable.swift; sourceTree = "<group>"; };
+		45F3F22F2ADD773A00D13F6C /* FlightOffersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOffersViewModel.swift; sourceTree = "<group>"; };
+		45F3F2312ADD7BF400D13F6C /* FlightOffersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOffersView.swift; sourceTree = "<group>"; };
+		45F3F2342ADD7E4E00D13F6C /* FlightOffersServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOffersServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				45F3F2162ADD38FE00D13F6C /* Features */,
+				45F3F2292ADD743600D13F6C /* Entities */,
+				45F3F2332ADD7E2200D13F6C /* Services */,
+				45F3F22C2ADD74B300D13F6C /* Utilis */,
 				45F3F1EC2ADD35F300D13F6C /* travel_sample_appApp.swift */,
 				45F3F1EE2ADD35F300D13F6C /* ContentView.swift */,
 				45F3F1F02ADD35F400D13F6C /* Assets.xcassets */,
@@ -143,10 +166,65 @@
 		45F3F2172ADD390800D13F6C /* FlightOffers */ = {
 			isa = PBXGroup;
 			children = (
-				45F3F2182ADD392800D13F6C /* FlightOfferView.swift */,
-				45F3F21A2ADD3B2600D13F6C /* FlightOffersCollectionView.swift */,
+				45F3F2222ADD6D0B00D13F6C /* View */,
+				45F3F2212ADD6CFD00D13F6C /* Presenter */,
+				45F3F2202ADD6CEF00D13F6C /* Interactor */,
+				45F3F21C2ADD6B1400D13F6C /* FlightOffersBuilder.swift */,
+				45F3F2252ADD6D7F00D13F6C /* FlightOffersServicesProtocol.swift */,
 			);
 			path = FlightOffers;
+			sourceTree = "<group>";
+		};
+		45F3F2202ADD6CEF00D13F6C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				45F3F21E2ADD6C2900D13F6C /* FlighOffersInteractor.swift */,
+				45F3F2272ADD731900D13F6C /* FlightOffersInteractorEvents.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		45F3F2212ADD6CFD00D13F6C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				45F3F2232ADD6D3A00D13F6C /* FlighOffersPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		45F3F2222ADD6D0B00D13F6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45F3F2182ADD392800D13F6C /* FlightOfferCardView.swift */,
+				45F3F21A2ADD3B2600D13F6C /* FlightOfferCollectionView.swift */,
+				45F3F22F2ADD773A00D13F6C /* FlightOffersViewModel.swift */,
+				45F3F2312ADD7BF400D13F6C /* FlightOffersView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45F3F2292ADD743600D13F6C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				45F3F22A2ADD746400D13F6C /* FlightOfferEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		45F3F22C2ADD74B300D13F6C /* Utilis */ = {
+			isa = PBXGroup;
+			children = (
+				45F3F22D2ADD74CC00D13F6C /* AutoMockable.swift */,
+			);
+			path = Utilis;
+			sourceTree = "<group>";
+		};
+		45F3F2332ADD7E2200D13F6C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				45F3F2342ADD7E4E00D13F6C /* FlightOffersServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,10 +357,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F3F2322ADD7BF400D13F6C /* FlightOffersView.swift in Sources */,
 				45F3F1EF2ADD35F300D13F6C /* ContentView.swift in Sources */,
-				45F3F2192ADD392800D13F6C /* FlightOfferView.swift in Sources */,
-				45F3F21B2ADD3B2600D13F6C /* FlightOffersCollectionView.swift in Sources */,
+				45F3F2192ADD392800D13F6C /* FlightOfferCardView.swift in Sources */,
+				45F3F21B2ADD3B2600D13F6C /* FlightOfferCollectionView.swift in Sources */,
+				45F3F2282ADD731900D13F6C /* FlightOffersInteractorEvents.swift in Sources */,
+				45F3F2262ADD6D7F00D13F6C /* FlightOffersServicesProtocol.swift in Sources */,
+				45F3F2352ADD7E4E00D13F6C /* FlightOffersServices.swift in Sources */,
+				45F3F22E2ADD74CC00D13F6C /* AutoMockable.swift in Sources */,
+				45F3F22B2ADD746400D13F6C /* FlightOfferEntity.swift in Sources */,
+				45F3F2302ADD773A00D13F6C /* FlightOffersViewModel.swift in Sources */,
 				45F3F1ED2ADD35F300D13F6C /* travel_sample_appApp.swift in Sources */,
+				45F3F21F2ADD6C2900D13F6C /* FlighOffersInteractor.swift in Sources */,
+				45F3F2242ADD6D3A00D13F6C /* FlighOffersPresenter.swift in Sources */,
+				45F3F21D2ADD6B1400D13F6C /* FlightOffersBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
