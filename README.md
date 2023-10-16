@@ -10,3 +10,5 @@ Below, you will find the list of steps that I followed to do that job. They matc
 Write an introduction on the readme file.
 
 1. **Readme file**: Write an introduction on the readme file.
+2. **Project + Feature UI initial version**. Creating a SwiftUI-based Xcode project and doing the initial implementation of the UI. This implementation is unpolished and uses dummy data.
+
