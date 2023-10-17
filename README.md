@@ -13,6 +13,7 @@ Write an introduction on the readme file.
 2. **Project + Feature UI initial version**. Creating a SwiftUI-based Xcode project and doing the initial implementation of the UI. This implementation is unpolished and uses dummy data.
 3. **Feature VIP**. Basic implementation of the "FlightOffers" Feature using the VIP pattern (see the VIP section)
 4. **Service + Remote Storage**. Simple implementation of the remote storage in charge of querying the API.
+5. **Connect feature to service**. Connecting the feature to the service and building the view model from the entities to show them on screen.
 
 
 ## VIP pattern

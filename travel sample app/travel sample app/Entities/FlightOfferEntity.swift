@@ -15,7 +15,7 @@ public struct FlightOfferEntity: Identifiable, Equatable {
         public let id: String
         public let durationInSec: Int
         public let source: Location
-        public let destinatio: Location
+        public let destination: Location
     }
     
     public struct Location: Identifiable, Equatable {

@@ -22,7 +22,7 @@ struct FlightOfferCardView: View {
                             .font(.title2)
                             .bold()
                         Spacer()
-                        Text(offer.priceInDollars)
+                        Text(offer.price)
                             .font(.largeTitle)
                             .bold()
                             .foregroundColor(Color.green)
@@ -30,7 +30,7 @@ struct FlightOfferCardView: View {
                     .padding(.horizontal)
                     
                     
-                    Text(offer.citiesPath)
+                    Text(offer.airportsPath)
                         .padding(.horizontal)
                     Text(offer.extraInformation)
                         .padding(.horizontal)
@@ -52,6 +52,6 @@ struct FlightOfferCardView: View {
 
 struct FlightOffersView_Previews: PreviewProvider {
     static var previews: some View {
-        FlightOfferCardView(offer: FlightOffersViewModel.OfferViewModel(id: "01", citiesPath: "Prague -> New York", priceInDollars: "$119", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info"))
+        FlightOfferCardView(offer: FlightOffersViewModel.OfferViewModel(id: "01", citiesPath: "Prague -> New York", price: "$119", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info"))
     }
 }

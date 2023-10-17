@@ -59,7 +59,7 @@ struct GraphqlQuery {
             search: {
               cabinClass: {applyMixedClasses: true, cabinClass: ECONOMY},
               itinerary: {
-                source: {ids: ["City:brno_cz","City:barcelona_es","City:palma_es","City:minorca_es"]},
+                source: {ids: ["City:reus_es"]},
                 destination: {ids: ["City:new-york-city_ny_us","City:palma_es","City:barcelona_es","City:minorca_es"]},
                 # outboundDepartureDate: {start: "2023-07-01T00:00:00", end: "2023-07-01T23:59:00"}
               },
@@ -116,13 +116,13 @@ struct GraphqlQuery {
                           code
                         }
                       }
-                      layover {
-                        duration
-                        isBaggageRecheck
-                        transferDuration
-                        transferType
-                      }
-                      guarantee
+        #                      layover {
+        #                        duration
+        #                        isBaggageRecheck
+        #                        transferDuration
+        #                        transferType
+        #                      }
+        #                      guarantee
                     }
                   }
                  }

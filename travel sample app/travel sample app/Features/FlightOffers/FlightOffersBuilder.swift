@@ -7,9 +7,10 @@ public struct FlightOffersBuilder {
         
         let interactor = FlightOffersInteractor(services: services)
         let presenter = FlightOffersPresenter()
+        interactor.output = presenter
         
         let view = FlightOffersView(presenter: presenter,
-                                          eventHandler: interactor)
+                                    eventHandler: interactor)
         
         return view
     }

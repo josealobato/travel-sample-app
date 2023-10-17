@@ -36,8 +36,6 @@ struct OnewayItinerariesResponse: Decodable {
                             let code: String
                             let source: JourneyDetail
                             let destination: JourneyDetail
-                            let carrier: Carrier
-                            let operatingCarrier: Carrier
                             
                             struct Carrier: Decodable {
                                 let id: String
@@ -101,7 +99,7 @@ extension OnewayItinerariesResponse.DataContent.OnewayItineraries.Itinerary.Sect
         return FlightOfferEntity.Segment(id: id,
                                          durationInSec: duration,
                                          source: source.station.toEntity(),
-                                         destinatio: destination.station.toEntity())
+                                         destination: destination.station.toEntity())
     }
 }
 

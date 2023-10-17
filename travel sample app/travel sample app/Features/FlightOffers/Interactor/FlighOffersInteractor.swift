@@ -46,14 +46,14 @@ final class FlightOffersInteractor: FlightOffersInteractorInput {
     
         do {
             
-            let flights = try await services.flights()
+            let flights = try await services.flights().prefix(5)
             
             if flights.isEmpty {
                 
                 render(.noData)
             } else {
                 
-                render(.refresh(flights))
+                render(.refresh(Array(flights)))
             }
             
         } catch {
