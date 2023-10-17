@@ -6,12 +6,24 @@ extension Storage: FlightOffersServicesProtocol {
     
     func flights() async throws -> [FlightOfferEntity] {
 
-        // Places will be used later to filter itineraries.
-//        let places = try await places()
-//        print(places)
+        try await flightsTodayFromAllPlaces()
+    }
+    
+    private func flightsTodayFromAllPlaces() async throws -> [FlightOfferEntity] {
         
-        let intineraries = try await onewayItineraries()
+        let places = try await places()
+        
+        let intineraries = try await onewayItineraries(from: places, date: Date())
         return intineraries
     }
+    
+    private func flightsTomorrowFromAllPlaces() async throws -> [FlightOfferEntity] {
+        
+        let places = try await places()
+        
+        let intineraries = try await onewayItineraries(from: places, date: Date(timeIntervalSinceNow: 3600 * 24))
+        return intineraries
+    }
+
 }
 

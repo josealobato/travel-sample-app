@@ -15,6 +15,7 @@ Write an introduction on the readme file.
 4. **Service + Remote Storage**. Simple implementation of the remote storage in charge of querying the API.
 5. **Connect feature to service**. Connecting the feature to the service and building the view model from the entities to show them on screen.
 6. **Images**. Show the images on the interface.
+7. **Remote Storage query for one day and many places**. Use the place's query to fill the one-way itineraries query. Also, restrict the departure to a single day. 
 
 ## VIP pattern
 
