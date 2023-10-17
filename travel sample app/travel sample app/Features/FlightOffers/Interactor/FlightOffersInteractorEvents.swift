@@ -12,6 +12,7 @@ enum FlightOffersInteractorEvents {
         
         case startLoading
         case noData
+        case onError
         case refresh([FlightOfferEntity])
     }
 }

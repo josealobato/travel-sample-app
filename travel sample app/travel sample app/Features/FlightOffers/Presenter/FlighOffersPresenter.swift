@@ -4,9 +4,14 @@ import UIKit
 
 final class FlightOffersPresenter: ObservableObject, FlightOffersInteractorOutput {
     
+    enum ViewState {
+        case normal, noData, loading, error
+    }
+    
     // MARK: - View Data
     @Published var viewModel = FlightOffersViewModel.empty
-    @Published var isLoading = false  // TODO: to hide.
+    @Published var isOnError = false
+    @Published var viewState: ViewState? = nil
     
     // MARK: - InteractorOutput
     
@@ -15,14 +20,21 @@ final class FlightOffersPresenter: ObservableObject, FlightOffersInteractorOutpu
         switch event {
             
         case .startLoading:
-            isLoading = true
+            isOnError = false
+            viewState = .loading
             
         case .noData:
-            isLoading = false
+            isOnError = false
+            viewState = .noData
             
         case .refresh(let flights):
-            isLoading = false
+            isOnError = false
+            viewState = nil
             viewModel = FlightOffersViewModel.build(from: flights)
+            
+        case .onError:
+            viewState = .error
+            isOnError = true
         }
     }
 }

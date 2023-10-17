@@ -25,7 +25,9 @@ final class FlightOffersInteractor: FlightOffersInteractorInput {
     
     private func renderError(_ error: Error, retryAction: (() -> Void)? = nil) {
         // Work with coordinator to show the error (Snackbar, alert, etc.)
-        print("Interactor Error: \(error)")
+        
+        // This error is just a quick solution.
+        render(.onError)
     }
 
     // MARK: - Intercator output

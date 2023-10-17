@@ -16,6 +16,7 @@ Write an introduction on the readme file.
 5. **Connect feature to service**. Connecting the feature to the service and building the view model from the entities to show them on screen.
 6. **Images**. Show the images on the interface.
 7. **Remote Storage query for one day and many places**. Use the place's query to fill the one-way itineraries query. Also, restrict the departure to a single day. 
+8. **Loading and Error State**. Quickly handle the error, loading, and no data states on the View. 
 
 ## VIP pattern
 
@@ -71,6 +72,8 @@ The only object omitted in this diagram is the ViewModel created in the Presente
 * No connection state. The app does not inform the user about no connectivity.
 * UT is missing. All the functional logic should be tested. In this case, the View Model Builder and the Intercator should be covered. 
 * Not Decode Protection. There is no decoding protection on the remote storage. Changes on the server can break the app.
+* Desing. I invest no time on desing.
+* Localization. Strings should not be hardcoded on the views or errors. They should be localized.
 
 ## Administrative information
 
