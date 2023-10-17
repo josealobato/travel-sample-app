@@ -10,12 +10,18 @@ struct FlightOfferCardView: View {
         VStack {
             
             VStack {
-                Image("placeholder")
-                    .resizable()
-                    .clipped()
-                    .background(Color.gray.opacity(0.1))
+                
+                AsyncImage(url: URL(string: offer.imagePath)) { image in
+                    image
+                        .resizable()
+                        .clipped()
+                        .background(Color.gray.opacity(0.1))
+                } placeholder: {
+                    ProgressView()
+                }
                 
                 Spacer()
+                
                 VStack(alignment: .leading, spacing: 10) {
                     HStack {
                         Text(offer.citiesPath)
@@ -52,6 +58,6 @@ struct FlightOfferCardView: View {
 
 struct FlightOffersView_Previews: PreviewProvider {
     static var previews: some View {
-        FlightOfferCardView(offer: FlightOffersViewModel.OfferViewModel(id: "01", citiesPath: "Prague -> New York", price: "$119", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info"))
+        FlightOfferCardView(offer: FlightOffersViewModel.OfferViewModel(id: "01", citiesPath: "Prague -> New York", price: "$119", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info", imagePath: ""))
     }
 }

@@ -14,7 +14,7 @@ Write an introduction on the readme file.
 3. **Feature VIP**. Basic implementation of the "FlightOffers" Feature using the VIP pattern (see the VIP section)
 4. **Service + Remote Storage**. Simple implementation of the remote storage in charge of querying the API.
 5. **Connect feature to service**. Connecting the feature to the service and building the view model from the entities to show them on screen.
-
+6. **Images**. Show the images on the interface.
 
 ## VIP pattern
 
@@ -62,3 +62,15 @@ You can see in this diagram the VIP implementation.
 ```
 
 The only object omitted in this diagram is the ViewModel created in the Presenter and Observed by the View.
+
+## What is missing
+
+* I can not consider this application to be production-ready because there are many things missing.
+* Error management. The service data throws, and the VIP should handle those errors and inform the user about the state.
+* No connection state. The app does not inform the user about no connectivity.
+* UT is missing. All the functional logic should be tested. In this case, the View Model Builder and the Intercator should be covered. 
+* Not Decode Protection. There is no decoding protection on the remote storage. Changes on the server can break the app.
+
+## Administrative information
+
+I did invest a total of n hours on this test.

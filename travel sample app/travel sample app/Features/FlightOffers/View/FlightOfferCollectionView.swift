@@ -52,12 +52,11 @@ struct FlightOffersCollectionView_Previews: PreviewProvider {
     static var previews: some View {
         
         FlightOfferCollectionView(offers: [
-            FlightOffersViewModel.OfferViewModel(id: "01", citiesPath: "Prague -> New York", price: "$119", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info"),
-            FlightOffersViewModel.OfferViewModel(id: "01", citiesPath: "Prague -> New York", price: "$129", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info"),
-            FlightOffersViewModel.OfferViewModel(id: "01", citiesPath: "Prague -> New York", price: "$139", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info"),
-            FlightOffersViewModel.OfferViewModel(id: "01", citiesPath: "Prague -> New York", price: "$149", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info"),
-            FlightOffersViewModel.OfferViewModel(id: "01", citiesPath: "Prague -> New York", price: "$159", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info")
-
+            FlightOffersViewModel.OfferViewModel(id: "01", citiesPath: "Prague -> New York", price: "$119", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info", imagePath: ""),
+            FlightOffersViewModel.OfferViewModel(id: "01", citiesPath: "Prague -> New York", price: "$129", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info", imagePath: ""),
+            FlightOffersViewModel.OfferViewModel(id: "01", citiesPath: "Prague -> New York", price: "$139", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info", imagePath: ""),
+            FlightOffersViewModel.OfferViewModel(id: "01", citiesPath: "Prague -> New York", price: "$149", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info", imagePath: ""),
+            FlightOffersViewModel.OfferViewModel(id: "01", citiesPath: "Prague -> New York", price: "$159", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info", imagePath: "")
         ])
     }
 }

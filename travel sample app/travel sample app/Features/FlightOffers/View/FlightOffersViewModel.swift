@@ -9,6 +9,7 @@ struct FlightOffersViewModel {
         let price: String
         let airportsPath: String
         let extraInformation: String
+        let imagePath: String
     }
     
     let Offers: [OfferViewModel]
@@ -33,11 +34,11 @@ extension FlightOffersViewModel.OfferViewModel {
         case let c where c > 1:
             
             guard let firstSegment = entity.segments.first else { return nil }
-            guard let lastSegment = entity.segments.first else { return nil }
+            guard let lastSegment = entity.segments.last else { return nil }
             citiesPath = "\(firstSegment.source.name) → \(lastSegment.destination.name)"
             airportPath = "\(firstSegment.source.code)"
             
-            for i in 1..<c {
+            for i in 0..<c {
                 airportPath.append(" → \(entity.segments[i].destination.code)")
             }
             
@@ -47,14 +48,19 @@ extension FlightOffersViewModel.OfferViewModel {
         
         let price = entity.princeInEur + "€"
         
-        // I'm ignoring minutes here.
+        var imagePath = ""
+        if let destinationLegacyId = entity.segments.last?.destination.city.legacyId {
+            imagePath = "https://images.kiwi.com/photos/600x600/\(destinationLegacyId).jpg"
+        }
+            
         let extraInformation = FlightOffersViewModel.formatTimeDuration(seconds: entity.durationInSec)
         
         return FlightOffersViewModel.OfferViewModel(id: entity.id,
                                                     citiesPath: citiesPath,
                                                     price: price,
                                                     airportsPath: airportPath,
-                                                    extraInformation: extraInformation)
+                                                    extraInformation: extraInformation,
+                                                    imagePath: imagePath)
     }
 }
 
@@ -62,22 +68,18 @@ extension FlightOffersViewModel {
     
     static func build(from flights: [FlightOfferEntity]) -> FlightOffersViewModel {
   
-//        dummyViewModel
         let offersViewModels = flights.compactMap { FlightOffersViewModel.OfferViewModel.from(entity: $0) }
 
         return FlightOffersViewModel(Offers: offersViewModels)
     }
     
-    static let dummyViewModel = FlightOffersViewModel(Offers: [
-        OfferViewModel(id: "01", citiesPath: "Prague -> New York", price: "$119", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info"),
-        OfferViewModel(id: "02", citiesPath: "Paris -> New York", price: "$129", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info"),
-        OfferViewModel(id: "03", citiesPath: "Rome -> New York", price: "$139", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info"),
-        OfferViewModel(id: "04", citiesPath: "Barcelona -> New York", price: "$149", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info"),
-        OfferViewModel(id: "05", citiesPath: "Verona -> New York", price: "$159", airportsPath: "PRG → JFK · 2 stops", extraInformation: "12 hours total · other info")
-    ])
-    
     // MARK: - Helpers
     
+    /// Formats a time in seconds to the format "1h 30min"
+    /// If there is no hour only the minutes are shown.
+    /// If there is no minutes only the hours are shown.
+    /// - Parameter seconds: The seconds to convert and display.
+    /// - Returns: the formated string.
     static func formatTimeDuration(seconds: Int) -> String {
         let hours = seconds / 3600
         let minutes = (seconds % 3600) / 60
@@ -93,6 +95,3 @@ extension FlightOffersViewModel {
         }
     }
 }
-
-
-// Helpers
