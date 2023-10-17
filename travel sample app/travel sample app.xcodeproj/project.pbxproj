@@ -25,7 +25,14 @@
 		45F3F22E2ADD74CC00D13F6C /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F22D2ADD74CC00D13F6C /* AutoMockable.swift */; };
 		45F3F2302ADD773A00D13F6C /* FlightOffersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F22F2ADD773A00D13F6C /* FlightOffersViewModel.swift */; };
 		45F3F2322ADD7BF400D13F6C /* FlightOffersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2312ADD7BF400D13F6C /* FlightOffersView.swift */; };
-		45F3F2352ADD7E4E00D13F6C /* FlightOffersServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2342ADD7E4E00D13F6C /* FlightOffersServices.swift */; };
+		45F3F2352ADD7E4E00D13F6C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2342ADD7E4E00D13F6C /* Storage.swift */; };
+		45F3F2372ADE22AA00D13F6C /* PlaceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2362ADE22AA00D13F6C /* PlaceEntity.swift */; };
+		45F3F2392ADE2A2900D13F6C /* PlacesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2382ADE2A2900D13F6C /* PlacesResponse.swift */; };
+		45F3F23C2ADE2E9A00D13F6C /* GraphqlQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F23B2ADE2E9A00D13F6C /* GraphqlQuery.swift */; };
+		45F3F23E2ADE303800D13F6C /* Storage+FlightOffersServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F23D2ADE303800D13F6C /* Storage+FlightOffersServicesProtocol.swift */; };
+		45F3F2402ADE30D900D13F6C /* Storage+Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F23F2ADE30D900D13F6C /* Storage+Places.swift */; };
+		45F3F2422ADE31ED00D13F6C /* Storage+OnewayItineraries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2412ADE31ED00D13F6C /* Storage+OnewayItineraries.swift */; };
+		45F3F2442ADE326700D13F6C /* OnewayItinerariesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2432ADE326700D13F6C /* OnewayItinerariesResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +74,14 @@
 		45F3F22D2ADD74CC00D13F6C /* AutoMockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMockable.swift; sourceTree = "<group>"; };
 		45F3F22F2ADD773A00D13F6C /* FlightOffersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOffersViewModel.swift; sourceTree = "<group>"; };
 		45F3F2312ADD7BF400D13F6C /* FlightOffersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOffersView.swift; sourceTree = "<group>"; };
-		45F3F2342ADD7E4E00D13F6C /* FlightOffersServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOffersServices.swift; sourceTree = "<group>"; };
+		45F3F2342ADD7E4E00D13F6C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		45F3F2362ADE22AA00D13F6C /* PlaceEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceEntity.swift; sourceTree = "<group>"; };
+		45F3F2382ADE2A2900D13F6C /* PlacesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesResponse.swift; sourceTree = "<group>"; };
+		45F3F23B2ADE2E9A00D13F6C /* GraphqlQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphqlQuery.swift; sourceTree = "<group>"; };
+		45F3F23D2ADE303800D13F6C /* Storage+FlightOffersServicesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage+FlightOffersServicesProtocol.swift"; sourceTree = "<group>"; };
+		45F3F23F2ADE30D900D13F6C /* Storage+Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage+Places.swift"; sourceTree = "<group>"; };
+		45F3F2412ADE31ED00D13F6C /* Storage+OnewayItineraries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage+OnewayItineraries.swift"; sourceTree = "<group>"; };
+		45F3F2432ADE326700D13F6C /* OnewayItinerariesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnewayItinerariesResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				45F3F22A2ADD746400D13F6C /* FlightOfferEntity.swift */,
+				45F3F2362ADE22AA00D13F6C /* PlaceEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -222,9 +237,31 @@
 		45F3F2332ADD7E2200D13F6C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				45F3F2342ADD7E4E00D13F6C /* FlightOffersServices.swift */,
+				45F3F23A2ADE2E7400D13F6C /* RemoteStorage */,
+				45F3F2342ADD7E4E00D13F6C /* Storage.swift */,
+				45F3F23D2ADE303800D13F6C /* Storage+FlightOffersServicesProtocol.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		45F3F23A2ADE2E7400D13F6C /* RemoteStorage */ = {
+			isa = PBXGroup;
+			children = (
+				45F3F2452ADE3AF800D13F6C /* Responses */,
+				45F3F23B2ADE2E9A00D13F6C /* GraphqlQuery.swift */,
+				45F3F23F2ADE30D900D13F6C /* Storage+Places.swift */,
+				45F3F2412ADE31ED00D13F6C /* Storage+OnewayItineraries.swift */,
+			);
+			path = RemoteStorage;
+			sourceTree = "<group>";
+		};
+		45F3F2452ADE3AF800D13F6C /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				45F3F2382ADE2A2900D13F6C /* PlacesResponse.swift */,
+				45F3F2432ADE326700D13F6C /* OnewayItinerariesResponse.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,13 +397,20 @@
 				45F3F2322ADD7BF400D13F6C /* FlightOffersView.swift in Sources */,
 				45F3F1EF2ADD35F300D13F6C /* ContentView.swift in Sources */,
 				45F3F2192ADD392800D13F6C /* FlightOfferCardView.swift in Sources */,
+				45F3F2402ADE30D900D13F6C /* Storage+Places.swift in Sources */,
+				45F3F2372ADE22AA00D13F6C /* PlaceEntity.swift in Sources */,
 				45F3F21B2ADD3B2600D13F6C /* FlightOfferCollectionView.swift in Sources */,
 				45F3F2282ADD731900D13F6C /* FlightOffersInteractorEvents.swift in Sources */,
+				45F3F2392ADE2A2900D13F6C /* PlacesResponse.swift in Sources */,
 				45F3F2262ADD6D7F00D13F6C /* FlightOffersServicesProtocol.swift in Sources */,
-				45F3F2352ADD7E4E00D13F6C /* FlightOffersServices.swift in Sources */,
+				45F3F23E2ADE303800D13F6C /* Storage+FlightOffersServicesProtocol.swift in Sources */,
+				45F3F2352ADD7E4E00D13F6C /* Storage.swift in Sources */,
 				45F3F22E2ADD74CC00D13F6C /* AutoMockable.swift in Sources */,
+				45F3F2422ADE31ED00D13F6C /* Storage+OnewayItineraries.swift in Sources */,
 				45F3F22B2ADD746400D13F6C /* FlightOfferEntity.swift in Sources */,
+				45F3F23C2ADE2E9A00D13F6C /* GraphqlQuery.swift in Sources */,
 				45F3F2302ADD773A00D13F6C /* FlightOffersViewModel.swift in Sources */,
+				45F3F2442ADE326700D13F6C /* OnewayItinerariesResponse.swift in Sources */,
 				45F3F1ED2ADD35F300D13F6C /* travel_sample_appApp.swift in Sources */,
 				45F3F21F2ADD6C2900D13F6C /* FlighOffersInteractor.swift in Sources */,
 				45F3F2242ADD6D3A00D13F6C /* FlighOffersPresenter.swift in Sources */,
