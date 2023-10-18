@@ -1,6 +1,6 @@
 import Foundation
 
-// Business entity depicting an FlightOfferEntity.
+// Business entity depicting an Flight Offer .
 // NOTE: Entities are marked as public because they should be on a Entities Package.
 public struct FlightOfferEntity: Identifiable, Equatable {
     

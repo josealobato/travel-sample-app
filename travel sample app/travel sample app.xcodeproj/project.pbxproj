@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		45F3F1ED2ADD35F300D13F6C /* travel_sample_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F1EC2ADD35F300D13F6C /* travel_sample_appApp.swift */; };
-		45F3F1EF2ADD35F300D13F6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F1EE2ADD35F300D13F6C /* ContentView.swift */; };
 		45F3F1F12ADD35F400D13F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45F3F1F02ADD35F400D13F6C /* Assets.xcassets */; };
 		45F3F1F42ADD35F400D13F6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45F3F1F32ADD35F400D13F6C /* Preview Assets.xcassets */; };
 		45F3F2082ADD35F400D13F6C /* travel_sample_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2072ADD35F400D13F6C /* travel_sample_appUITests.swift */; };
@@ -57,7 +56,6 @@
 /* Begin PBXFileReference section */
 		45F3F1E92ADD35F300D13F6C /* travel sample app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "travel sample app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F3F1EC2ADD35F300D13F6C /* travel_sample_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = travel_sample_appApp.swift; sourceTree = "<group>"; };
-		45F3F1EE2ADD35F300D13F6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		45F3F1F02ADD35F400D13F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45F3F1F32ADD35F400D13F6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45F3F1F92ADD35F400D13F6C /* travel sample appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "travel sample appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +139,6 @@
 				45F3F2332ADD7E2200D13F6C /* Services */,
 				45F3F22C2ADD74B300D13F6C /* Utilis */,
 				45F3F1EC2ADD35F300D13F6C /* travel_sample_appApp.swift */,
-				45F3F1EE2ADD35F300D13F6C /* ContentView.swift */,
 				45F3F1F02ADD35F400D13F6C /* Assets.xcassets */,
 				45F3F1F22ADD35F400D13F6C /* Preview Content */,
 			);
@@ -425,7 +422,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				45F3F2322ADD7BF400D13F6C /* FlightOffersView.swift in Sources */,
-				45F3F1EF2ADD35F300D13F6C /* ContentView.swift in Sources */,
 				45F3F2192ADD392800D13F6C /* FlightOfferCardView.swift in Sources */,
 				45F3F2402ADE30D900D13F6C /* Storage+Places.swift in Sources */,
 				45F3F2372ADE22AA00D13F6C /* PlaceEntity.swift in Sources */,

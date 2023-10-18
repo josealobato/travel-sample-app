@@ -21,6 +21,7 @@ struct FlightOffersViewModel {
 }
 
 extension FlightOffersViewModel.OfferViewModel {
+    
     static func from(entity: FlightOfferEntity) -> FlightOffersViewModel.OfferViewModel? {
         
         var citiesPath = ""
@@ -32,7 +33,6 @@ extension FlightOffersViewModel.OfferViewModel {
             airportPath = "\(segment.source.code) → \(segment.destination.code)"
             
         case let c where c > 1:
-            
             guard let firstSegment = entity.segments.first else { return nil }
             guard let lastSegment = entity.segments.last else { return nil }
             citiesPath = "\(firstSegment.source.name) → \(lastSegment.destination.name)"
@@ -81,6 +81,7 @@ extension FlightOffersViewModel {
     /// - Parameter seconds: The seconds to convert and display.
     /// - Returns: the formated string.
     static func formatTimeDuration(seconds: Int) -> String {
+        
         let hours = seconds / 3600
         let minutes = (seconds % 3600) / 60
 

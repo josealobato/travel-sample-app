@@ -1,6 +1,6 @@
 import Foundation
 
-// Flight Offers Feature Publis Services Protocol
+// Flight Offers Feature Public Services Protocol
 //
 // The application shoujld provide an object confroming to this protocol
 // to allow the FlightOffers Features to function.

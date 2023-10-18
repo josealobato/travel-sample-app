@@ -7,6 +7,7 @@ struct FlightOffersView: View {
     
     init(presenter: FlightOffersPresenter,
          eventHandler: FlightOffersInteractor) {
+        
         self._presenter = StateObject(wrappedValue: presenter)
         self.eventHandler = eventHandler
     }
