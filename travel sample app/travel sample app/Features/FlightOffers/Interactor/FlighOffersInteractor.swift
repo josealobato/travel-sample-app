@@ -33,11 +33,8 @@ final class FlightOffersInteractor: FlightOffersInteractorInput {
     // MARK: - Intercator output
 
     private func render(_ event: FlightOffersInteractorEvents.Output) {
-
-        DispatchQueue.main.async {
-
-            self.output?.dispatch(event)
-        }
+        
+        self.output?.dispatch(event)
     }
     
     // MARK: - Interaction management

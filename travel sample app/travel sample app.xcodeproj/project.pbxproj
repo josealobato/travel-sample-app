@@ -11,7 +11,6 @@
 		45F3F1EF2ADD35F300D13F6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F1EE2ADD35F300D13F6C /* ContentView.swift */; };
 		45F3F1F12ADD35F400D13F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45F3F1F02ADD35F400D13F6C /* Assets.xcassets */; };
 		45F3F1F42ADD35F400D13F6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45F3F1F32ADD35F400D13F6C /* Preview Assets.xcassets */; };
-		45F3F1FE2ADD35F400D13F6C /* travel_sample_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F1FD2ADD35F400D13F6C /* travel_sample_appTests.swift */; };
 		45F3F2082ADD35F400D13F6C /* travel_sample_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2072ADD35F400D13F6C /* travel_sample_appUITests.swift */; };
 		45F3F20A2ADD35F400D13F6C /* travel_sample_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2092ADD35F400D13F6C /* travel_sample_appUITestsLaunchTests.swift */; };
 		45F3F2192ADD392800D13F6C /* FlightOfferCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2182ADD392800D13F6C /* FlightOfferCardView.swift */; };
@@ -33,6 +32,9 @@
 		45F3F2402ADE30D900D13F6C /* Storage+Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F23F2ADE30D900D13F6C /* Storage+Places.swift */; };
 		45F3F2422ADE31ED00D13F6C /* Storage+OnewayItineraries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2412ADE31ED00D13F6C /* Storage+OnewayItineraries.swift */; };
 		45F3F2442ADE326700D13F6C /* OnewayItinerariesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2432ADE326700D13F6C /* OnewayItinerariesResponse.swift */; };
+		45F3F24B2ADEFE5B00D13F6C /* Automockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F24A2ADEFE5B00D13F6C /* Automockable.generated.swift */; };
+		45F3F24F2ADEFF0200D13F6C /* FlightOfferViewModelBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F24E2ADEFF0200D13F6C /* FlightOfferViewModelBuilderTests.swift */; };
+		45F3F2512ADFA03600D13F6C /* FlightOfferInteractorOnInitialLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3F2502ADFA03600D13F6C /* FlightOfferInteractorOnInitialLoad.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +61,6 @@
 		45F3F1F02ADD35F400D13F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45F3F1F32ADD35F400D13F6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45F3F1F92ADD35F400D13F6C /* travel sample appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "travel sample appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		45F3F1FD2ADD35F400D13F6C /* travel_sample_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = travel_sample_appTests.swift; sourceTree = "<group>"; };
 		45F3F2032ADD35F400D13F6C /* travel sample appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "travel sample appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F3F2072ADD35F400D13F6C /* travel_sample_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = travel_sample_appUITests.swift; sourceTree = "<group>"; };
 		45F3F2092ADD35F400D13F6C /* travel_sample_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = travel_sample_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -82,6 +83,9 @@
 		45F3F23F2ADE30D900D13F6C /* Storage+Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage+Places.swift"; sourceTree = "<group>"; };
 		45F3F2412ADE31ED00D13F6C /* Storage+OnewayItineraries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage+OnewayItineraries.swift"; sourceTree = "<group>"; };
 		45F3F2432ADE326700D13F6C /* OnewayItinerariesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnewayItinerariesResponse.swift; sourceTree = "<group>"; };
+		45F3F24A2ADEFE5B00D13F6C /* Automockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Automockable.generated.swift; sourceTree = "<group>"; };
+		45F3F24E2ADEFF0200D13F6C /* FlightOfferViewModelBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOfferViewModelBuilderTests.swift; sourceTree = "<group>"; };
+		45F3F2502ADFA03600D13F6C /* FlightOfferInteractorOnInitialLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOfferInteractorOnInitialLoad.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +159,8 @@
 		45F3F1FC2ADD35F400D13F6C /* travel sample appTests */ = {
 			isa = PBXGroup;
 			children = (
-				45F3F1FD2ADD35F400D13F6C /* travel_sample_appTests.swift */,
+				45F3F24C2ADEFE7200D13F6C /* Features */,
+				45F3F2492ADEFE5B00D13F6C /* Generated */,
 			);
 			path = "travel sample appTests";
 			sourceTree = "<group>";
@@ -262,6 +267,31 @@
 				45F3F2432ADE326700D13F6C /* OnewayItinerariesResponse.swift */,
 			);
 			path = Responses;
+			sourceTree = "<group>";
+		};
+		45F3F2492ADEFE5B00D13F6C /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				45F3F24A2ADEFE5B00D13F6C /* Automockable.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		45F3F24C2ADEFE7200D13F6C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				45F3F24D2ADEFE8200D13F6C /* FlightOffers */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		45F3F24D2ADEFE8200D13F6C /* FlightOffers */ = {
+			isa = PBXGroup;
+			children = (
+				45F3F24E2ADEFF0200D13F6C /* FlightOfferViewModelBuilderTests.swift */,
+				45F3F2502ADFA03600D13F6C /* FlightOfferInteractorOnInitialLoad.swift */,
+			);
+			path = FlightOffers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,7 +452,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45F3F1FE2ADD35F400D13F6C /* travel_sample_appTests.swift in Sources */,
+				45F3F2512ADFA03600D13F6C /* FlightOfferInteractorOnInitialLoad.swift in Sources */,
+				45F3F24B2ADEFE5B00D13F6C /* Automockable.generated.swift in Sources */,
+				45F3F24F2ADEFF0200D13F6C /* FlightOfferViewModelBuilderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

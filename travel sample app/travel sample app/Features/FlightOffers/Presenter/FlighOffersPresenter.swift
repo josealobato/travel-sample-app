@@ -16,6 +16,10 @@ final class FlightOffersPresenter: ObservableObject, FlightOffersInteractorOutpu
     // MARK: - InteractorOutput
     
     func dispatch(_ event: FlightOffersInteractorEvents.Output) {
+        DispatchQueue.main.async { [weak self] in self?.dispatchOnMain(event) }
+    }
+    
+    func dispatchOnMain(_ event: FlightOffersInteractorEvents.Output) {
         
         switch event {
             
