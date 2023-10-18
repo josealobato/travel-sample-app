@@ -6,8 +6,8 @@ It uses the Kiwi.com Umbrella API to either list or search available Places and 
 
 # Some Decisions
 
-**Unique offers different datys**. I decided to query every day for one-way itineraries that **start that given day**. This way, I will offer every day fresh information. But I wonder if the API works like this. I decided not to invest more time guessing how the API works on this part. In a work environment, I'll gather more information and even contact the people who could explain what to expect from it.
-**Unique offerings**. I noticed that some offers received have almost the same data (at least the one on the interface), including the same `id`. **I decided that data with different id are different**. So, on the same day, you will see offerings that look the same but are different (different ID). Probably, a better strategy is needed here once more acquainted with the API.
+* **Unique offers different days**. I decided to query every day for one-way itineraries that **start that given day**. This way, I will offer every day fresh information. But I wonder if the API works like this. I decided not to invest more time guessing how the API works on this part. In a work environment, I'll gather more information and even contact the people who could explain what to expect from it.
+* **Unique offerings on one day**. I noticed that some offers received have almost the same data (at least the one on the interface), including the same `id`. **I decided that data with different id are different**. So, on the same day, you will see offerings that look the same but are different (different ID). Probably, a better strategy is needed here once more acquainted with the API.
 
 # Development Steps
 
